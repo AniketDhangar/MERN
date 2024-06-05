@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .card-container{
+        height: 100vh;
+        width: 100%;        
+            display: flex;
+            background-image: linear-gradient(to left, rgb(236, 247, 162), rgb(68, 217, 247));
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+    
+   
+        .card-items {
+            padding: 10px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            height: 400px;
+            background-image: linear-gradient(to right, gray, rgb(247, 104, 104));
+            flex-grow: 1;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+            animation: rotate-in 4s;
+        }
+    .card-items img{
+         border-radius: 50%;
+        height: 100px;
+        width: 100px;
+         box-shadow: 10px 10px 10px rgb(33, 44, 33);
+    }
+    .card-items:nth-child(even) {
+            animation: rotate-in 4s;
+        }
+
+        .card-items:nth-child(odd) {
+            animation: fade 4s;
+        }
+     @keyframes rotate-in{
+        0% {
+                opacity: 0;
+                transform: translateX(100%);
+                transform:rotateZ(90deg);    
+                   
+                }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+                transform:rotateZ(360deg);
+
+            }
+     }
+     @keyframes fade {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+                transform: scale3d(100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0%);
+            }
+        }
+  </style>
+</head>
+<body>
+ <div class="card-container">
+    <div class="card-items">
+        <img src="/Animation/robot.jpg" alt="">
+        <div class="card-info">
+            <h1> Chittiee the Robot</h1>
+            <p>Memory: 1SB</p>
+            <p>Speed: 1THz</p>
+            <p>Location: Jalgaon</p>
+                   </div>
+    </div>
+    <div class="card-items">
+        <img src="/Animation/robot.jpg" alt="">
+        <div class="card-info">
+            <h1> Chittiee the Robot</h1>
+            <p>Memory: 1SB</p>
+            <p>Speed: 1THz</p>
+            <p>Location: Jalgaon</p>
+                   </div>
+    </div>
+    <div class="card-items">
+        <img src="/Animation/robot.jpg" alt="">
+        <div class="card-info">
+            <h1> Chittiee the Robot</h1>
+            <p>Memory: 1SB</p>
+            <p>Speed: 1THz</p>
+            <p>Location: Jalgaon</p>
+                   </div>
+    </div>
+    <div class="card-items">
+        <img src="/Animation/robot.jpg" alt="">
+        <div class="card-info">
+            <h1> Chittiee the Robot</h1>
+            <p>Memory: 1SB</p>
+            <p>Speed: 1THz</p>
+            <p>Location: Jalgaon</p>
+                   </div>
+    </div>
+
+ </div>
+
+</body>
+</html>

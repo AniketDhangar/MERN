@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card-2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .main-container{
+            height: 100vh;
+            width: 100%;
+            background-color:  #e1dede;
+            align-items: center;
+            justify-content: center;
+            color: white;
+
+        }
+        .card-container{
+           height: 100%;
+           width: 70%;
+            margin: 20%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+        }
+        .right-card{
+            background-color: #2563eb;
+            width: 50%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        p{
+            font-size: small;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        .left-card{
+            width: 50%;
+            height: 80%;
+            background-color: white;
+            display: flex;
+                    flex-direction: column;
+        }
+        input ,button{
+            margin-top: 20px;
+            width: 80%;
+            height: 30px;
+            margin: 10px;
+            border-radius: 3px;
+            border: 1px solid transparent;
+            background-color:  #e1dede;
+        }
+        .sign{
+            color: black;
+            width: 80%;
+            margin-right: 100px;
+            
+        }
+        #sign-in{
+            border-radius: 20px;
+            border: 1px solid transparent;
+            background-color: #1d4ed8;
+            padding: 7px;
+            color: white;
+        }
+        #signing{
+            background-color: #1d4ed8;
+            border: none;
+            color: white;
+            border-radius: 4px;
+        }
+        #logos{
+            margin: 15px;
+           color: rgb(46, 46, 45);
+          
+        }
+        h3{
+            text-align: center;
+        }
+        .linkedin,.fb,.google{
+            border-radius: 50%;
+            gap: 50px;
+        }
+      
+    </style>
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="card-container">
+            <div class="right-card">
+                <h3>Come join with us!</h3>
+                <p>we so excited to have you here. If you have already create an account to get access to exclusive offers, rewards and discount.</p>
+                <button id="sign-in">Already have an account? sign in.</button>
+            </div>
+            <div class="left-card">
+                <h3 class="sign">Signup</h3>
+                <form class="form">                    
+                <input type="text" placeholder="enter your name">
+                <input type="email" placeholder="enter email">
+                <input type="password" placeholder="enter password">
+                <input type="password" placeholder="enter password again">
+                <button id="signing">Sign up</button>
+                </form>
+                <div id="logos"> sign up with
+                 
+                    <div class="logo">
+                        <i class="fa-brands fa-facebook fb" style="color: #1f5bc1;"></i>
+                        <i class="fa-brands fa-google-plus-g google" style="color: #ec3e32;"></i>
+                        <i class="fa-brands fa-linkedin linkedin" style="color: #1f5bc1;"></i>
+                           </div>
+   
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

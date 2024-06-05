@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE</title>
+</head>
+<style>
+    body{
+        justify-content: center;
+        align-items: center;
+        scroll-behavior: smooth;
+        
+    }
+    caption{
+        background-color: black;
+       color: white;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    th,td{
+        /* gap: 20px; */
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        /* border: 1px solid black; */
+       
+    }
+    th{
+        font-size: large;
+        
+    }
+    tr{
+        border-top: 1px solid black;
+    }
+    .highlight{
+        background-color: rgb(188, 232, 232);
+    }
+    img{
+        height: 50px;
+        width: 50px;
+        border-radius: 40px;
+    }
+    .branding{
+        color:rgb(6, 28, 69);
+    }
+    button{
+        color: azure;
+        background-color: gray;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
+<body>
+    
+    <div>
+
+        <table>
+            <caption>Carporate Demo </caption>
+            <thead>
+                <tr>
+                    <td>Image</td>
+                    <td>Name</td>
+                    <td>Price</td>
+                    <td>Size</td>
+                    <td>Ratings</td>
+                    <!-- <td>Buy</td>                     -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="highlight">
+                    <td ><img src="/table/t1.jpg" alt=""></td>
+                    <td class="branding">Rocky Handsome</td>
+                    <td>$1500</td>
+                    <td>Size:M</td>
+                    <td><button>Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td><img src="/table/t2.jpg" alt=""></td>
+                    <td class="branding">Victor</td>
+                    <td>$1000</td>
+                    <td>Size:L</td>
+                    <td><button>Buy Now</button></td>
+                </tr>
+                <tr class="highlight">
+                    <td ><img src="/table/t3.jpg" alt=""></td>
+                    <td class="branding">Zara</td>
+                    <td>$2500</td>
+                    <td>Size:M</td>
+                    <td><button>Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td><img src="/table/t4.jpg" alt=""></td>
+                    <td class="branding">Buggy</td>
+                    <td>$3500</td>
+                    <td>Size:M</td>
+                    <td><button>Buy Now</button></td>
+
+                </tr>
+                <tr class="highlight">
+                    <td><img src="/table/t5.jpg" alt=""></td>
+                    <td class="branding">Premium Gucci</td>
+                    <td>$5000</td>
+                    <td>Size:M</td>
+                    <td><button>Buy Now</button></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>

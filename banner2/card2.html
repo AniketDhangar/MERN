@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+                  }
+        .main-container{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-image: linear-gradient(to right, rgb(189, 189, 248), rgb(136, 136, 105));
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        } 
+        .sub-container{
+            height: 100%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10%;
+        }
+      .head{
+        height: 10%;
+        width: 100%;
+       
+        justify-content: center;
+        align-items: center;
+      } 
+        nav ul{
+    margin-top: 10px;
+    display: flex;
+    list-style:none;
+
+    gap:25px ;
+    padding-bottom: 20px; 
+    justify-content: center;    
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+padding-right: 100px;
+}
+.sign{
+    margin-right: 30px;
+    border-radius: 20px;
+    width: 80px;
+    height: 100%;
+}
+.hero-section{
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+.right-hero,.left-hero{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.right-hero{
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    text-align: left;
+    position: relative;
+    
+}
+h2{
+    font-weight: 900;
+}
+ img{
+     /* margin: 50px;
+     margin-top: 60px; */
+     position: relative;
+     top: 10px;
+    height: 300px;
+    width: 80%;
+    color: #f1f1f1;
+   
+    
+ }
+ .right-1{
+    background-color: rgb(80, 79, 79);
+    padding: 3px;
+    border-radius: 20px;
+    /* position: absolute;
+    top:  ; */
+    
+ }
+ .right-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+ }
+ .right-1,.right-2,.right-3,.right-4{
+    gap: 50px;
+ }
+button{
+    border: 1px solid black;
+    border-radius: 20px;
+    background: transparent;
+    
+ }
+ #right-A,#right-B{
+   background-color: transparent;
+   margin: 20px;
+   padding: 10px;
+   height: 55px;
+   box-sizing:content-box;
+ }
+
+      
+        .main-footer {
+            height: 30%;
+            width: 80vw;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            font-size: small;
+            
+        }
+
+        .footer-item {
+            height: 100%;
+            width: 100%;            
+            background-color: rgb(15, 19, 40);
+            display: flex;
+            /* justify-content: center;
+            align-items: center; */
+            position: relative;
+            bottom: 10px;
+            padding-left: 30px;
+            border-top-left-radius:10px ;
+            border-top-right-radius:10px ;
+
+        }  
+        .footer-item1,.footer-item2,.footer-item3,.footer-item4{
+            /* background-color: grey; */
+            height: 80%;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            top: 40%;
+                        
+        }
+        .footer-item4{
+            width: 25%;
+        }
+        .logos{
+           
+        }
+       
+        .new{            
+            padding: 4px;
+        }
+        .percent{
+            font-weight: 900;
+            font-size:larger;
+            font-family: sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main-container">
+      <div class="sub-container">
+        <header class="head">
+            <div class="navbar-section">
+                <nav>
+                    <ul>
+                        <li><div class="logo"><h2>Craftie.</h2></div></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><button class="sign">Sign Up</button></li>
+                    </ul>
+                </nav>
+            </div>
+          </header>
+    
+      <div class="hero-section">
+        <div class="right-hero">
+            <span class="right-1">The Best Solution</span>
+            <div class="right-2"><h2>Visualize Your Ideas</h2></div>
+            <div class="right-3"><p>We believe doed not follow the trend but we are gaurenteed to provide the best in digital services .</p></div>
+            <div class="right-4">
+                <div id="right-A"><button>Start The Project</button></div>
+                <div id="right-B"><button>Find Out More</button></div>
+            </div>
+        </div>
+        <div class="left-hero">
+            <div class="image">
+                <img src="/banner2/bai-removebg-preview.png" alt="">
+            </div>
+        </div>
+      </div>
+            <div class="main-footer">
+                <div class="footer-item">
+                 <div class="footer-item1">
+                    <span class="percent"><h1>95%</h1></span>
+                    <div>success in getting customer</div>
+                 </div>
+                <div class="footer-item2"> 
+                    <span class="percent"><h1>2.5%</h1></span>
+                    <div>potential incremental traffic</div>
+                </div>
+                <div class="footer-item3">
+                    <span class="percent"><h1>10K</h1></span>
+                    <div>Project Completed</div>
+                </div>
+                <div class="footer-item4">
+                    <div class="logos">
+                        <i class="fa-brands fa-facebook new"></i>
+                        <i class="fa-brands fa-twitter new"></i>
+                        <i class="fa-brands fa-instagram new"></i>
+                        <i class="fa-solid  fa-phone new"></i>
+                        <!-- <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-github"></i>
+                          -->
+                    </div>
+                </div>
+                </div>
+    
+            </div>
+      </div>
+    </div>
+</body>
+</html>

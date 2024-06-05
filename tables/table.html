@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table{
+          
+            border-collapse: collapse;
+        }
+        th,
+        td {
+            
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: rgb(233, 174, 139);
+        }
+        td{
+            background-color: rgb(203, 213, 232);
+        }
+        .subject{
+            background-color: rgb(233, 174, 139);
+        }
+        caption {
+            caption-side: top;
+            font-size: 1.5em;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <table>
+        <caption>Student Data</caption>
+        <thead>
+            <tr>
+                <th rowspan="2"> Name/Subject</th>                
+                <th colspan="3">1st</th>
+                <th colspan="3">2nd</th>
+            </tr>
+            <tr class="subject">
+                 <td>ASP.Net</td>
+                 <td>ruby</td>
+                 <td>OS</td>
+                 <td>ASP.Net</td>
+                 <td>ruby</td>
+                 <td>OS</td>       
+              </tr>
+        </thead>
+       <tbody>        
+    
+        <tr>
+            <td>Tejanshu</td> 
+            <td>56</td>
+            <td>20</td>
+            <td>45</td>   
+            <td>55</td>
+            <td>66</td>
+            <td>77</td>          
+        </tr>
+        <tr>
+            <td>Aniket</td>
+            <td>78</td>
+            <td>70</td>
+            <td>100</td>
+            <td>54</td>
+            <td>88</td>
+            <td>89</td>  
+        </tr>
+      
+        
+       </tbody>
+    </table>
+
+</body>
+</html>

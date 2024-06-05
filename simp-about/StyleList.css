@@ -1,0 +1,33 @@
+nav{
+    background-color: rgb(4, 62, 62);
+    position: fixed;            
+    width: 100%;
+    align-items: center;
+    
+}
+
+nav ul{
+    display: flex;
+    list-style:none;
+    gap: 100px;
+    padding: 15px;
+    justify-content: center;
+}
+li a {
+    text-decoration: none;
+    color: cyan;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+img{
+    object-fit: cover;
+    height: 75vh;
+    width: 75vw;
+    margin-top: 80px;
+}

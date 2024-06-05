@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            height: 100vh;
+            width: 100vw;
+            scroll-behavior: smooth;
+        }
+        .container{   
+            margin-top: 50px;         
+            width: 100%;
+            display: flex;   
+            justify-content:space-between; 
+            flex-wrap: wrap;
+           
+        }
+         .container .about,.search,table{
+            flex-shrink: 1;
+            align-items: center;
+            justify-content: center;            
+            width: 33.33%;
+            padding:  20px;
+            float: left;
+        }
+       
+        #search-box{
+            padding: 5px;
+            width: 100%;
+            text-align: center;
+            background-color: transparent;
+            border: 0.5px solid white;
+            color: white;
+        }
+   
+        p{
+            text-align:justify;
+        }
+        h3{
+            text-align: center;
+        }
+        ul li{
+    list-style:none;
+    gap: 100px;
+    align-items: center;   
+    justify-content: center;
+    
+}
+       
+.ico{
+    padding-right: 25px;
+   gap: 100px;
+    /* align-items: center;
+    justify-content: center; */
+}
+div .logo{
+    padding-right: 25px;
+    gap: 100PX;
+}
+/* .timing{
+    background-color: yellow;
+}
+.search{
+    background-color: red;
+}
+.about{
+    background-color: blue;
+} */
+    table{
+        border-collapse: collapse;
+       
+    }
+    th,td{
+        /* gap: 20px; */
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        /* border: 1px solid black; */
+       
+    }
+    th{
+        font-size: large;
+    }
+    tr{
+        border-bottom: 1px solid white;
+    }
+    .schedule{
+        font-size: small;
+    }
+footer{
+    background-color: #252323;
+    text-align: center;
+    height: 30px;
+}
+    </style>
+
+</head>
+<body>
+    
+<div class="container">
+
+  <div class="about">
+    <h3>About Company</h3>
+    <p class="info-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem deserunt aspernatur, quasi consequuntur assumenda tenetur odit labore. Distinctio, quae cupiditate? Excepturi, quos. Voluptates deserunt repudiandae excepturi atque, maxime quae eos.</p>
+    <div class="logo">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+</div>
+  
+
+
+<div class="search">
+    <h3>Search Something</h3>
+    <p><input id="search-box" type="search" placeholder="Search here"></p>
+ <ul>
+    <li>    <i class="fa-solid fa-house ico"></i> Jalgaon, 425002,Maharashtra.
+    </li>
+    <li><i class="fa-regular fa-envelope ico"></i>21aniketdhangar13@gmail.com</li>
+    <li>    <i class="fa-solid fa-phone ico"></i>+91 7875942104
+    </li>
+    <li>    <i class="fa-solid fa-fax ico"></i>+91 7875942104
+    </li>
+ </ul>    
+  </div>
+
+<div class="timing">
+    <h3>Opening hours</h3>
+     <table>
+             <tr class="schedule">
+            <td>Mon-Tue</td>
+            <td>8am- 9pm</td>
+        </tr>
+        <tr class="schedule">
+            <td>Fri-Sat</td>
+            <td>8am-1pm</td>
+        </tr>
+        <tr class="schedule">
+            <td>Sunday</td>
+        <td>10am-10pm</td>
+    </tr>
+     </table>
+</div>
+
+</div>
+<footer>
+    <i class="fa-regular fa-copyright"></i>2020 Copyright :MDBootstrap.com
+</footer>
+
+</body>
+</html>

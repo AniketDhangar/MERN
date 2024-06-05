@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .main-container{
+            height: 100vh;
+            width: 100%; 
+            display: flex;
+            flex-direction: row;            
+            align-items: center;
+            position: relative;
+                /* justify-content: center; */
+        }
+        .navbar{
+            background-color: rgb(35, 4, 62);
+            display: flex;
+            flex-direction: row;
+            color: white;
+            height: 5%;
+            width: 80%;
+            position: absolute;
+            left: 10%;
+            /* margin-left: 20%; */
+
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+        }
+         nav ul a{
+            text-decoration: none;
+            color: white;
+
+         }
+         nav ul i{
+            text-decoration: none;
+         }
+         .right-nav{
+            display: flex;
+            flex-direction: row;
+            
+         }
+         .logo{
+            justify-content: end;
+            align-items: end;
+         }
+
+
+    </style>
+</head>
+<body>
+ <div class="main-container">
+   <div class="nav-add">
+    <div class="navbar">
+        <nav>
+            <ul class="right-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+           
+                <li><i class="fa-brands fa-facebook logo"></i></li>
+                <li><i class="fa-brands fa-twitter logo"></i></li>
+                <li><i class="fa-brands fa-google-plus-g logo"></i></li>
+            </ul>
+        </nav>
+     </div>
+   </div>
+
+ </div>
+
+</body>
+</html>

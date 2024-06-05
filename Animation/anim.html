@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            display: grid;
+            grid-template-areas:
+                "sidebar header header"
+                "sidebar main aside"
+                "footer footer footer";
+            grid-template-rows: 60px 1fr 100px;
+            grid-template-columns: auto 1fr auto;
+            gap: 5px;
+            color: white;
+        }
+
+        header {
+            grid-area: header;
+            background-color: red;
+            text-align: center;
+            animation: header 3s;
+                /* height: 50%; */
+
+        }
+            
+
+
+
+
+        sidebar {
+            grid-area: sidebar;
+            background-color: rgb(29, 28, 28);
+            color: white;
+            animation: side 3s;
+        }
+        sidebar:hover{
+        
+        }
+
+        main {
+            grid-area: main;
+            background-color: blue;
+            z-index: 1;
+            animation: main 3s;
+            overflow: hidden; 
+           }
+
+        aside {
+            grid-area: aside;
+            background-color: green;
+            animation: aside 3s;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: gray;
+            animation: foot 3s;
+        }
+
+        @keyframes header{
+            0%{
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+        }
+        @keyframes side{
+            0%{
+                opacity: 0;
+                transform: translateX(-100%);
+
+            }
+            100%{
+                opacity: 1;
+
+            }
+        }
+        @keyframes main {
+            0%{
+                opacity: 1;
+                transform-origin: 0 0;
+                transform: translate(100%, 50%) rotate(90deg) translate(-100%, 50%);
+
+                              
+            }
+           
+            
+            100%{
+                opacity: 1;
+              
+            }
+        }
+        @keyframes aside {
+            0%{
+                opacity: 0;
+                transform: translateX(100%);  
+            }
+        }
+        @keyframes foot {
+            0%{
+                opacity: 0;
+                transform: translateY(100%);
+            }
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <header>
+<h2>header</h2>
+    </header>
+    <sidebar>
+        <h2>Side-Bar</h2>
+    
+    </sidebar>
+    <main>MAIN</main>
+    <aside>ASIDE</aside>
+    <footer>
+        FOOTER
+    </footer>
+</body>
+<div class="start">
+</div>
+<div class="center"></div>
+<div class="end"></div>
+</html>

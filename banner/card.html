@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main-container {
+        color: white;
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+      }
+   
+    header {
+        width: 100%;
+        height: 10%;
+        font-size: small;
+        align-items: start;
+        background: transparent;
+        color: white;
+      }
+          li {
+        text-decoration: none;
+        display: flex;
+        list-style: none;
+        color: white;
+        gap: 10px;
+        align-items: start;
+        justify-content: start;
+      }
+
+      button {
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+        height: 25px;
+        width: 80px;
+      }
+      #home {
+        color: red;
+      }
+       #logo {
+        align-items: start;
+      }
+      #web {
+        color: red;
+      }
+      .text {
+        width: 50%;
+        text-align: center;
+padding: 80px;    
+}
+      img{
+         margin: 50px;
+         margin-right: 50px;
+        height: 170px;
+        width: 170px;
+        border-radius: 15px;
+      }
+
+      .navbar {
+        color: white;
+        /* background-color: purple; */
+        width: 100%;
+        height: 55px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        align-items: center;
+      }
+      .middles{
+        margin-top: 30px;
+        gap: 10px;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+        justify-content: center;
+      }
+      .image{
+        width: 40%;
+        /* background-color: yellow; */
+
+
+      }
+      .navi-bar{
+        margin: -10px;
+      }
+      .boxes{
+        height: 130px;
+        width: 100%;
+        display: flex;  
+        flex-direction: row;
+        gap: 50px;
+        justify-content: space-evenly;
+
+      }
+      .foot-box{
+        background-color: rgb(23, 23, 23);
+        border-radius: 10px;
+        height: 130px;
+        width: 200px;
+        gap: 50px;
+        text-align: center;
+        overflow: hidden;
+        flex-grow: 1;
+      }
+  
+  .emote{   
+    color: red;
+    background-color: rgb(12, 11, 11);
+    height: 80px;
+    width: 80px;
+border-radius: 50%;
+margin-left: 14px;
+padding-top: 20px;
+
+  }
+  
+  .arrow{
+     margin-top: 20px;
+justify-content: space-around;
+ }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="sub-container">
+        <header>            
+            <nav>               
+              <ul class="navbar">
+            <li><span>Logo</span></li>
+            <li  class="navi-bar"  id="home">Home</li>
+            <li class="navi-bar" >Service</li>
+            <li class="navi-bar" >About us</li>
+            <li class="navi-bar" >News</li>
+            <li class="navi-bar" >Blog</li>
+            <li><span><button>Contact Us</button></span></li>
+          </ul>              
+            </nav>          
+        </header>
+
+        <div class="middles">
+          <div class="text">
+            <h2>We are Digital Creative <span id="web">Web Agency...</span></h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
+              tenetur consequuntur vitae.
+            </p>
+          </div>
+
+          <div class="image">
+            <img src="/banner/man.jpg" alt="">
+          </div>
+        </div>
+
+        <footer class="boxes">
+          <div class="foot-box" id="foot-1">
+            <h3>Web Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div class="arrow">
+              <i class="fas fa-arrow-right"></i><span>Read more</span>
+              <span><i class="fas fa-pencil-ruler emote"></i></span>
+            </div>
+          </div>
+          <div class="foot-box" id="foot-2">
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div class="arrow">
+              <i class="fas fa-arrow-right"></i><span>Read more</span>
+              <span><i class="far fa-folder-open emote"></i></span>
+            </div>
+          </div>
+          <div class="foot-box" id="foot-3">
+            <h3>Web Application</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div class="arrow">
+              <i class="fas fa-arrow-right"></i><span>Read more</span>
+              <span><i class="fas fa-mail-bulk emote"></i></span>
+            </div>
+          </div>
+          <div class="foot-box" id="foot-4">
+            <h3>Web Markting</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div class="arrow">
+              <i class="fas fa-arrow-right"></i><span>Read more</span>
+              <span><i class="fab fa-internet-explorer emote"></i></span>
+            </div>
+          </div>
+        </footer> 
+
+      </div>
+    </div>
+  </body>
+</html>

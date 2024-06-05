@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card-3</title>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main-container{
+            background-color: rgb(206, 185, 185);
+            height: 100vh;
+            width: 100%;
+            text-align: center;
+            position: relative;
+        }
+        #header{
+            font-family: "Architects Daughter", cursive;
+  font-weight: 300;
+  font-style: normal;
+        }
+        .card-container{
+            /* background-color: red; */
+            height: 100%;
+            width: 70%;
+            display: flex;
+            position:absolute ;
+            bottom: 0;
+            
+             margin-left: 15%;
+            justify-content: center;
+            align-items: center;
+
+        }
+       
+        .card-1,.card-2,.card-3{
+            height: 300px;
+            width: 250px;
+            background-color: white;
+            margin-left: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 20px ;
+
+            font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+        }
+        .up-1,.up-2,.up-3{
+            position: relative;
+            height: 35%;
+            width: 100%;
+            background-color: #000000;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px ;
+opacity: 5;
+background-image:  linear-gradient(30deg, #120f0f 12%, transparent 12.5%, transparent 87%, #120f0f 87.5%, #120f0f), linear-gradient(150deg, #120f0f 12%, transparent 12.5%, transparent 87%, #120f0f 87.5%, #120f0f), linear-gradient(30deg, #120f0f 12%, transparent 12.5%, transparent 87%, #120f0f 87.5%, #120f0f), linear-gradient(150deg, #120f0f 12%, transparent 12.5%, transparent 87%, #120f0f 87.5%, #120f0f), linear-gradient(60deg, #120f0f77 25%, transparent 25.5%, transparent 75%, #120f0f77 75%, #120f0f77), linear-gradient(60deg, #120f0f77 25%, transparent 25.5%, transparent 75%, #120f0f77 75%, #120f0f77);
+background-size: 58px 102px;
+background-position: 0 0, 0 0, 29px 51px, 29px 51px, 0 0, 29px 51px;
+        }
+ 
+        small{
+            position: absolute;
+            top: 5%;
+            left: 15%;
+            text-align:justify;
+            color: white;
+            /* position: absolute;
+            top: 10%; */
+
+        }
+        #tag-1,#tag-2{
+                margin-left: 24px;
+        }
+        .image-container{
+            position: relative;
+             height: 35% ;
+             width: 80%;
+              /* background-color: red; */
+        }
+         .image-container #img-1,#img-2,#img-3{
+            height: 150px;
+            width: 100px;
+            position: absolute;
+            bottom: -76px;
+            left: 25%;
+            /* filter: drop-shadow(0px 30px 20px); */
+
+         }
+         #img-1{   
+            height: 120px;
+            width: 90px ;             
+            margin-bottom: 110px;   
+         }
+         #img-2{
+            height: 200px;
+            width: 120px ;
+            margin-bottom:90px ;
+         }
+         #img-3{
+            height: 120px;
+            width: 90px ;
+            margin-bottom:130px ;
+            margin-left: 10px;
+            
+         }
+         .pricing{         
+               position: absolute;
+           top: 60px;
+          left  : 65px ;
+         }
+         p{
+            text-align:center;
+            color: rgb(101, 100, 100);
+            font-size: xx-small;
+            margin-bottom: 20px;
+         }
+          button{
+            background-color: #fff;
+          }
+          .blue-button{
+            border-radius: 25px;
+            background-color: blue;
+            border: none;
+             padding: 5px;
+             font-weight: bold;
+             color: white;
+          }
+          .pink-button{
+            border-radius: 25px;
+            border: none;
+            background-color: rgb(244, 87, 113);
+            padding: 5px;
+             font-weight: bold;
+             color: white;
+          }
+    </style>
+</head>
+<body>
+     <div class="main-container">
+        <h2 id="header">E-Commerce Product View Card</h2>
+
+    <div class="card-container">
+        <div class="card-1">
+            <div class="up-1">
+                <div class="tag">
+                    <small id="tag-1">GO WILD TOTE</small>
+                     
+                 </div>
+            </div>
+
+             <div class="image-container">
+                <img id="img-1" src="./blazer-removebg-preview.png" alt=""> 
+                <div class="pricing" >
+                    <strong>$2250.50</strong>
+                </div>             
+            </div>
+
+           
+
+            <div class="down-1">
+                 <p>FASHION HAS BEEN CREATING WELL DESIGNED COLLECTION</p>
+                  <button class="blue-button">BUY NOW</button>
+            </div>           
+        </div>
+        <div class="card-2">
+            <div class="up-2">
+                <div class="tag">
+                    <small id="tag-2">LADY DRESS</small>
+                 </div>
+
+            </div>
+
+            <div class="image-container">
+                <img id="img-2" src="./pattern-removebg-preview.png" alt="">
+                <div class="pricing" >
+                    <strong>$20.50</strong>
+                </div>  
+             </div>
+
+            <div class="down-2">
+                <p>FASHION HAS BEEN CREATING WELL DESIGNED COLLECTION</p>
+                <button class="pink-button">BUY NOW</button>
+            </div>
+        </div>
+        <div class="card-3">
+            <div class="up-3">
+                <div class="tag">
+                    <small>PATTERNED ZIPPERED</small>
+                 </div>
+
+            </div>
+
+            <div class="image-container">
+                <img id="img-3" src="./blazer1-removebg-preview.png" alt="">
+                <div class="pricing" >
+                    <strong>$2500.50</strong>
+                </div>  
+             </div>
+
+            <div class="down-3">
+                <p>FASHION HAS BEEN CREATING WELL DESIGNED COLLECTION</p>
+                <button class="blue-button">BUY NOW</button>
+            </div>
+        </div>
+    </div>
+
+     </div>
+
+</body>
+</html>
